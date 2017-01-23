@@ -117,6 +117,15 @@ static const CGFloat ImageVerticalPadding = 3.0;
             yAxisLabelFactors = @[@0.5f];
         } else {
             yAxisLabelFactors = @[@0.0f, @1.0f];
+            /*
+                Previously yAxisLabelFactors was equal to @[@0.2f, @1.0f]; 
+
+                We had to change first param to @0.0f in order to move minimum indicator value to the bottom of plot 
+                and show actual minimum value. (previously it was counting about 20% shift)
+
+                More info can be found here
+                https://github.com/KainosSoftwareLtd/evolve.ios.idcr/pull/559
+            */
         }
         
         for (NSNumber *factorNumber in yAxisLabelFactors) {
