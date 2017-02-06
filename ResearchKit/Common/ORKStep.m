@@ -66,18 +66,18 @@
 //- (Class)stepViewControllerClass {
 //    return [[self class] stepViewControllerClass];
 //}
-
-- (ORKStepViewController *)instantiateStepViewControllerWithResult:(ORKResult *)result {
-    Class stepViewControllerClass = [self stepViewControllerClass];
-    
-    ORKStepViewController *stepViewController = [[stepViewControllerClass alloc] initWithStep:self result:result];
-    
-    // Set the restoration info using the given class
-    stepViewController.restorationIdentifier = self.identifier;
-    stepViewController.restorationClass = stepViewControllerClass;
-    
-    return stepViewController;
-}
+//
+//- (ORKStepViewController *)instantiateStepViewControllerWithResult:(ORKResult *)result {
+//    Class stepViewControllerClass = [self stepViewControllerClass];
+//    
+//    ORKStepViewController *stepViewController = [[stepViewControllerClass alloc] initWithStep:self result:result];
+//    
+//    // Set the restoration info using the given class
+//    stepViewController.restorationIdentifier = self.identifier;
+//    stepViewController.restorationClass = stepViewControllerClass;
+//    
+//    return stepViewController;
+//}
 
 - (instancetype)copyWithIdentifier:(NSString *)identifier {
     ORKThrowInvalidArgumentExceptionIfNil(identifier)
