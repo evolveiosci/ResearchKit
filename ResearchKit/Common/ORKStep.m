@@ -32,7 +32,7 @@
 #import "ORKStep.h"
 #import "ORKStep_Private.h"
 
-#import "ORKStepViewController.h"
+//#import "ORKStepViewController.h"
 
 //#import "ORKOrderedTask.h"
 //#import "ORKStepViewController_Internal.h"
