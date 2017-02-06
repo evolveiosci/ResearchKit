@@ -31,33 +31,33 @@
 
 @import UIKit;
 
-#import "ORKScaleSlider.h"
-#import "ORKScaleSliderView.h"
+//#import "ORKScaleSlider.h"
+//#import "ORKScaleSliderView.h"
 
-#import "ORKAnswerFormat_Internal.h"
+//#import "ORKAnswerFormat_Internal.h"
 
 #import "ORKAccessibilityFunctions.h"
 #import "UIView+ORKAccessibility.h"
 
 
-NSString *ORKAccessibilityFormatScaleSliderValue(CGFloat value, ORKScaleSlider *slider) {
-    ORKScaleSliderView *sliderView = (ORKScaleSliderView *)[slider ork_superviewOfType:[ORKScaleSliderView class]];
-    if (!slider || !sliderView) {
-        return nil;
-    }
-    
-    NSNumber *normalizedValue = [sliderView.formatProvider normalizedValueForNumber:@(value)];
-    return [sliderView.formatProvider localizedStringForNumber:normalizedValue];
-}
-
-NSString *ORKAccessibilityFormatContinuousScaleSliderValue(CGFloat value, ORKScaleSlider *slider) {
-    ORKScaleSliderView *sliderView = (ORKScaleSliderView *)[slider ork_superviewOfType:[ORKScaleSliderView class]];
-    if (!slider || !sliderView) {
-        return nil;
-    }
-    
-    return [sliderView.formatProvider localizedStringForNumber:@(value)];
-}
+//NSString *ORKAccessibilityFormatScaleSliderValue(CGFloat value, ORKScaleSlider *slider) {
+//    ORKScaleSliderView *sliderView = (ORKScaleSliderView *)[slider ork_superviewOfType:[ORKScaleSliderView class]];
+//    if (!slider || !sliderView) {
+//        return nil;
+//    }
+//    
+//    NSNumber *normalizedValue = [sliderView.formatProvider normalizedValueForNumber:@(value)];
+//    return [sliderView.formatProvider localizedStringForNumber:normalizedValue];
+//}
+//
+//NSString *ORKAccessibilityFormatContinuousScaleSliderValue(CGFloat value, ORKScaleSlider *slider) {
+//    ORKScaleSliderView *sliderView = (ORKScaleSliderView *)[slider ork_superviewOfType:[ORKScaleSliderView class]];
+//    if (!slider || !sliderView) {
+//        return nil;
+//    }
+//    
+//    return [sliderView.formatProvider localizedStringForNumber:@(value)];
+//}
 
 void ORKAccessibilityPerformBlockAfterDelay(NSTimeInterval delay, void(^block)(void)) {
     if (block == nil) {
