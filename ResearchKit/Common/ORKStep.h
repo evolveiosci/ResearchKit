@@ -186,7 +186,7 @@ ORK_CLASS_AVAILABLE
  Returns the class that the task view controller should instantiate to display
  this step.
  */
-- (Class)stepViewControllerClass;
+//- (Class)stepViewControllerClass;
 
 /**
  Instantiates a step view controller for this class.
@@ -203,7 +203,7 @@ ORK_CLASS_AVAILABLE
  
  @return A newly initialized step view controller.
  */
-- (ORKStepViewController *)instantiateStepViewControllerWithResult:(ORKResult *)result;
+//- (ORKStepViewController *)instantiateStepViewControllerWithResult:(ORKResult *)result;
 
 @end
 

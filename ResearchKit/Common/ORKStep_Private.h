@@ -47,9 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
  controller in their task view controller delegate to override the task
  view controller's default.
  */
-+ (Class)stepViewControllerClass;
+//+ (Class)stepViewControllerClass;
 
-- (Class)stepViewControllerClass;
+//- (Class)stepViewControllerClass;
 
 @property (nonatomic, assign) BOOL shouldTintImages;
 

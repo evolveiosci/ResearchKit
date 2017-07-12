@@ -1,12 +1,12 @@
 {
   "name": "ResearchKit",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "authors": {
     "iOS1": "velocityios1@KainosSoftwareLtd.onmicrosoft.com",
     "iOS2": "velocityios2@KainosSoftwareLtd.onmicrosoft.com"
   },
-  "source": { 
-      "path": "." 
+  "source": {
+      "path": "."
   },
   "license": "EVOLVE",
   "homepage": "https://www.kainosevolve.com/",
@@ -14,8 +14,8 @@
     "ios": "9.0"
   },
   "summary": "Files shared across all modules.",
-  "source_files": ["ResearchKit/Charts/**/*.{h,m,swift}", 
-  "ResearchKit/Common/ORKDefines.h", 
+  "source_files": ["ResearchKit/Charts/**/*.{h,m,swift}",
+  "ResearchKit/Common/ORKDefines.h",
   "ResearchKit/Common/ORKHelpers_Internal.h",
   "ResearchKit/Common/ORKHelpers_Private.h",
   "ResearchKit/Common/ORKHelpers.m",
